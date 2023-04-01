@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio de Lucas Beguin</title>
+	<style>
+		/* Mise en page générale */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+			color: #333;
+			line-height: 1.5;
+		}
+		
+		.container {
+			margin: 20px;
+			max-width: 800px;
+			margin: 0 auto;
+		}
+		
+		h1, h2, h3 {
+			font-weight: normal;
+			margin: 20px 0;
+			text-align: center;
+		}
+		
+		/* Header */
+		.header {
+			background-color: #007bff;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			position: sticky;
+			top: 0;
+			z-index: 1;
+			transition: background-color 0.3s;
+		}
+		
+		.header:hover {
+			background-color: #0056b3;
+		}
+		
+		.header h1 {
+			margin: 0;
+		}
+		
+		/* Section "Informations personnelles" */
+		.personal-info {
+			background-color: #fff;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			padding: 20px;
+			transition: box-shadow 0.3s;
+		}
+		
+		.personal-info:hover {
+			box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+		}
+		
+		.personal-info h2 {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			font-size: 24px;
+		}
+		
+		.personal-info p {
+			margin-top: 10px;
+			text-align: justify;
+		}
+		
+		/* Section "Mes passions" */
+		.passions {
+			margin-top: 40px;
+			background-color: #fff;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			padding: 20px;
+			transition: box-shadow 0.3s;
+		}
+		
+		.passions:hover {
+			box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+		}
+		
+		.passions h2 {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			font-size: 24px;
+		}
+		
+		.passions ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		
+		.passions li {
+			margin: 10px;
+			flex-basis: calc(33.33% - 20px);
+			background-color: #007bff;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			transition: transform 0.3s;
+		}
+		.passions li:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+		}
+		
+		/* Section "Projets personnels" */
+		.personal-projects {
+			margin-top: 40px;
+			background-color: #fff;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			padding: 20px;
+			transition: box-shadow 0.3s;
+		}
+		
+		.personal-projects:hover {
+			box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+		}
+		
+		.personal-projects h2 {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			font-size: 24px;
+		}
+		
+		.personal-projects ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		
+		.personal-projects li {
+			margin: 10px;
+			flex-basis: calc(33.33% - 20px);
+			background-color: #007bff;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			transition: transform 0.3s;
+		}
+		
+		.personal-projects li:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+		}
+		
+		/* Section "Projets d'école" */
+		.school-projects {
+			margin-top: 40px;
+			background-color: #fff;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			padding: 20px;
+			transition: box-shadow 0.3s;
+		}
+		
+		.school-projects:hover {
+			box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+		}
+		
+		.school-projects h2 {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			font-size: 24px;
+		}
+		
+		.school-projects img {
+			display: block;
+			margin: 20px auto;
+			max-width: 100%;
+		}.
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		img {
+		  max-width: 100%;
+		  height: auto;
+		}
+		/* Footer */
+		.footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			margin-top: 40px;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<h1>Portfolio de Lucas Beguin</h1>
+	</header>
+	
+	<div class="container">
+		<section class="personal-info">
+			<h2>Informations personnelles</h2>
+			<p>Je m'appelle Lucas Beguin, je suis né le 13 décembre 2004 et je suis actuellement en terminal technologique spécialité SIN. Je me dirige vers des études d'informatique car cela semble une suite logique pour moi ayant baigné toute ma vie dans les jeux vidéos et l'informatique en général. Cependant après 1 an en section informatique, cette filière ne me plaisant pas car jugée trop peu créative à mon goût je souhaite me réorienter en section MMI.</p>
+		</section>
+		
+		<section class="passions">
+			<h2>Mes passions</h2>
+			<ul>
+				<li>
+					<img src="moto.jpg" alt="Moto">
+					<h3>Moto</h3>
+					<p>J'aime passer du temps à travailler sur ma moto et à faire des balades avec des amis.</p>
+				</li>
+				<li>
+					<img src="jeux-video.jpg" alt="Jeux vidéo">
+					<h3>Jeux vidéo</h3>
+					<p>Je suis un grand fan de jeux vidéo et j'aime créer des mods et des plugins pour Minecraft en Java.</p>
+				</li>
+				<li>
+					<img src="montage-video.jpg" alt="Montage vidéo">
+					<h3>Montage photo/vidéo</h3>
+					<p>Je m'amuse souvent à créer des montages photo et vidéo pour mes amis et ma famille.</p>
+				</li>
+			</ul>
+		</section>
+		
+		<section class="personal-projects">
+			<h2>Projets personnels</h2>
+			<ul>
+				<li>
+					<h3>Mods/plugins en Java sur Minecraft</h3>
+					<p>J'ai créé plusieurs mods et plugins en Java pour Minecraft, qui sont disponibles sur mon profil GitHub.</p>
+				</li>
+				<li>
+					<h3>Montages photos de ma moto</h3>
+					<p>J'ai créé plusieurs montages photo de ma moto, en utilisant des logiciels de retouche photo.</p>
+				</li>
+				<li>
+					<img src="joystick.jpg" alt="Joystick">
+					<h3>Joystick en Arduino</h3>
+					<p>J'ai réalisé un projet d'école consistant à configurer un joystick en Arduino pour pouvoir retranscrire les mouvements produits.</p>
+				</li>
+			</ul>
+		</section>
+		
+		<section class="school-projects">
+			<h2>Projets d'école</h2>
+			<img src="joystick.jpg" alt="Joystick">
+			<p>Il s'agit d'un joystick qu'il a fallu configurer en Arduino pour pouvoir retranscrire les mouvements produits.</p>
+		</section>
+	</div>
+	
+	<footer class="footer">
+		<p>Lucas Beguin - Portfolio</p>
+	</footer>
+	
+</body>
+</html>
